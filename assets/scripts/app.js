@@ -5,7 +5,7 @@ function add(num1, num2){
     result = num1 + num2;
     alert('The result is: ' + result);
 }
-x
+
 add(1 , 2);
 add(5, 5);
 
