@@ -1,24 +1,14 @@
-// let name = 'Max';
+const addListenerBtn = document.getElementById('add-listener-btn');
+const clickableBtn = document.getElementById('clickable-btn');
+const messageInput = document.getElementById('click-message-input');
 
-// if (name === 'Max') {
-//   let hobbies = ['Sports', 'Cooking'];
-//   console.log(hobbies);
+function printMessage() {
+  const value = messageInput.value;
+  console.log(value || 'Clicked me!');
+}
 
-// }
+function addListener() {
+  clickableBtn.addEventListener('click', printMessage);
+}
 
-// function greet() {
-//   let age = 30;
-//   let name = 'Manuel';
-//   console.log(name, age, hobbies);
-// }
-
-// console.log(name, hobbies);
-
-// greet();
-'use strict';
-
-const userName = 'Max';
-var undefined = 5;
-
-console.log(userName);
-
+addListenerBtn.addEventListener('click', addListener);
